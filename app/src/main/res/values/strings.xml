@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">IroidMachineTest</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="home">Home</string>
+    <string name="title_dashboard">Categories</string>
+    <string name="title_notifications">Account</string>
+    <string name="search_bar_hint">Search Products</string>
+    <string name="categories">Categories</string>
+    <string name="see_all">See all</string>
+    <string name="new_products">New Products</string>
+    <string name="Rs">\u20B9</string>
+    <string name="product_for_you">Product For You</string>
+</resources>

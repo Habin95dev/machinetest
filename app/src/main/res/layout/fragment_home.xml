@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment"
+    android:layout_marginBottom="60dp">
+    <include
+        android:id="@+id/view_search_bar"
+        layout="@layout/search_bar_view"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+    <RelativeLayout
+        android:id="@+id/rl_catg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Dp_20"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_header1"
+            android:text="@string/categories"
+            style="@style/item_header_txt" />
+        <TextView
+            android:text="@string/see_all"
+            style="@style/seeall_txt_style" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_cat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cat_rcv_height"
+            android:layout_below="@id/tv_header1"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_new_prdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Dp_20"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_header2"
+            android:text="@string/new_products"
+            style="@style/item_header_txt" />
+        <TextView
+            android:text="@string/see_all"
+            style="@style/seeall_txt_style" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_new_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_header2"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_prdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Dp_20"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_header3"
+            android:text="@string/product_for_you"
+            style="@style/item_header_txt" />
+        <TextView
+            android:text="@string/see_all"
+            style="@style/seeall_txt_style" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_header3"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
